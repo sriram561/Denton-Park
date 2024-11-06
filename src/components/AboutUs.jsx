@@ -7,7 +7,7 @@ const AboutUs = () => {
 
         {/* Title Section */}
         <div className="title flex flex-col justify-center items-center h-[20vh]  bg-black w-full">
-          <h1 className="text-4xl font-bold text-white transition-transform transform hover:scale-105">Welcome to DENTON AMUSEMENT Park!</h1>
+          <h1 className="text-4xl font-bold text-white transition-transform transform hover:scale-105">Welcome to DENTON AMUSEMENT PARK!</h1>
           <p className="text-3xl text-yellow-600 italic">Where Adventure Awaits!</p>
         </div>
 

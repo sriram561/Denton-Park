@@ -7,7 +7,7 @@ const AboutUs = () => {
 
         {/* Title Section */}
         <div className="title flex flex-col justify-center items-center h-[20vh]  bg-black w-full">
-          <h1 className="text-4xl font-bold text-white transition-transform transform hover:scale-105">Welcome to DENTON Park!</h1>
+          <h1 className="text-4xl font-bold text-white transition-transform transform hover:scale-105">Welcome to DENTON AMUSEMENT Park!</h1>
           <p className="text-3xl text-yellow-600 italic">Where Adventure Awaits!</p>
         </div>
 
@@ -26,10 +26,10 @@ const AboutUs = () => {
           <div className="description w-full md:w-1/2 p-4 flex flex-col justify-center items-center">
             <div className="flex flex-col">
               <p className="text-gray-800 mb-2">
-                Dive into adventure at HAYYIN, where excitement meets fun for all ages! Experience thrilling rides like the Sky Whirlwind and family-friendly attractions that create lasting memories.
+                Dive into adventure at DENTON, where excitement meets fun for all ages! Experience thrilling rides like the Sky Whirlwind and family-friendly attractions that create lasting memories.
               </p>
               <p className="text-gray-800">
-                Join us for special events, parades, and live entertainment that bring the magic of HAYYIN to life. Explore our ticket options and plan your visit today—unforgettable adventures await!
+                Join us for special events, parades, and live entertainment that bring the magic of DENTON to life. Explore our ticket options and plan your visit today—unforgettable adventures await!
               </p>
             </div>
           </div>
@@ -99,7 +99,7 @@ const AboutUs = () => {
             {[
               {
                 name: "Alex Russo",
-                role: "Hayyin Park  Manager",
+                role: "Denton Park  Manager",
                 img: "https://images.pexels.com/photos/19270854/pexels-photo-19270854/free-photo-of-redhead-model-in-coat-on-city-street.jpeg?auto=compress&cs=tinysrgb&w=600",
               },
               {

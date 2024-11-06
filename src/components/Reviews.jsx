@@ -50,7 +50,7 @@ function Reviews() {
                     </div>
                     <form onSubmit={handleAddReview} className='space-y-4 p-4'>
                         <textarea
-                            placeholder="Ex: This Hayyin Park is the best place I have spent my time joyfully"
+                            placeholder="Ex: This Denton Amusement Park is the best place I have spent my time joyfully"
                             className='w-full p-3 border rounded-md focus:outline-none focus:ring-2 h-16'
                             value={newReview}
                             onChange={(e) => setNewReview(e.target.value)}

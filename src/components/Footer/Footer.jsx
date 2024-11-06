@@ -14,7 +14,7 @@ const Footer = () => {
       >
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-14 md:gap-4">
           <div className="space-y-4 max-w-[300px]" style={{placeSelf:"center"}}>
-            <h1 className="text-2xl font-bold">DENTON Park</h1>
+            <h1 className="text-2xl font-bold">DENTON AMUSEMENT Park</h1>
             <h1 className="text-2xl">Connect with us through</h1>
             <div className="flex space-x-6 py-3">
   <a href="https://chat.whatsapp.com/FQSKgJ5f1eIAhlyF5sVym0">

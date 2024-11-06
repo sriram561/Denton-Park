@@ -74,7 +74,7 @@ const Chatbot = () => {
 
 
         <div className="title justify-center items-center flex h-[15vh] bg-black text-yellow-400">
-          <h1 className="text-4xl flex items-center">Meet the HAYYIN Chatbot <FaRobot className="mx-5 text-4xl font-extrabold"/>   </h1>
+          <h1 className="text-4xl flex items-center">Meet the DENTON Chatbot <FaRobot className="mx-5 text-4xl font-extrabold"/>   </h1>
         </div>
 
 

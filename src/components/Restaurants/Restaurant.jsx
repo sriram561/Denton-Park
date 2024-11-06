@@ -30,7 +30,7 @@ function Restaurant({ handleMenuClick }) {
         <>
             <div className="flex flex-col items-center">
                 <div className='bg-gray-300 h-[20vh] w-full flex items-center justify-center'>
-                    <h1 className='text-gray-600 font-bold text-4xl'>Restaurants of HAYYIN</h1>
+                    <h1 className='text-gray-600 font-bold text-4xl'>DENTON RESTAURANTS</h1>
                 </div>
 
                 <div className="flex flex-col gap-8 p-8 w-full max-w-screen-xl mx-auto items-center">

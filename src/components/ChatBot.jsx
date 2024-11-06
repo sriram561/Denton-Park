@@ -17,7 +17,6 @@ const generationConfig = {
   responseMimeType: "text/plain",
 };
 
-
 const faqs = {
   "what are the available rides?": "We offer various rides, including water rides, high rides, kids' rides, and land rides.",
   "how can i book a ticket?": "You can book tickets through our booking page by selecting your desired ride and the number of tickets.",
@@ -36,8 +35,17 @@ const Chatbot = () => {
     const userMessage = { text: message, sender: "user" };
     setChatHistory((prev) => [...prev, userMessage]);
 
+    
+    const lowerMessage = message.trim().toLowerCase();
+    if (lowerMessage === "hi" || lowerMessage === "hello" || lowerMessage === "hey") {
+      const botMessage = { text: "How may I help you?", sender: "bot" };
+      setChatHistory((prev) => [...prev, botMessage]);
+      setMessage("");
+      return;
+    }
 
-    const response = faqs[message.trim().toLowerCase()];
+   
+    const response = faqs[lowerMessage];
     if (response) {
       const botMessage = { text: response, sender: "bot" };
       setChatHistory((prev) => [...prev, botMessage]);
@@ -71,23 +79,16 @@ const Chatbot = () => {
   return (
     <>
       <div className="main flex flex-col">
-
-
         <div className="title justify-center items-center flex h-[15vh] bg-black text-yellow-400">
-          <h1 className="text-4xl flex items-center">Meet the DENTON Chatbot <FaRobot className="mx-5 text-4xl font-extrabold"/>   </h1>
+          <h1 className="text-4xl flex items-center">
+            Meet the DENTON Chatbot <FaRobot className="mx-5 text-4xl font-extrabold" />
+          </h1>
         </div>
-
-
-
-
       </div>
 
-
       <div className="bg-yellow-400 h-[100vh] flex items-center justify-around">
-
-
-        <div className="app-container " style={{ display: 'flex', justifyContent: 'center', gap: '20px' }}>
-          <div className="chat-container bg-black ">
+        <div className="app-container" style={{ display: 'flex', justifyContent: 'center', gap: '20px' }}>
+          <div className="chat-container bg-black">
             <div className="chat-history bg-gray-400">
               {chatHistory.map((chat, index) => (
                 <div key={index} className={`chat-message ${chat.sender}`}>
@@ -102,15 +103,17 @@ const Chatbot = () => {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Type your message..."
-                className=" bg-slate-900 text-gray-400"
+                className="bg-slate-900 text-gray-400"
               />
-              <button className="bg-yellow-400 text-black tex" onClick={handleSendMessage}>Send</button>
+              <button className="bg-yellow-400 text-black" onClick={handleSendMessage}>
+                Send
+              </button>
             </div>
           </div>
 
           <div className="faq-container bg-black">
             <div className="faq-header text-gray-300">Frequently Asked Questions</div>
-            <ul className="faq-list  h-[80%]">
+            <ul className="faq-list h-[80%]">
               {Object.keys(faqs).map((faq, index) => (
                 <li key={index} className="faq-item bg-slate-900 text-gray-400">
                   {faq.charAt(0).toUpperCase() + faq.slice(1)}
@@ -119,9 +122,7 @@ const Chatbot = () => {
             </ul>
           </div>
         </div>
-
       </div>
-
     </>
   );
 };
